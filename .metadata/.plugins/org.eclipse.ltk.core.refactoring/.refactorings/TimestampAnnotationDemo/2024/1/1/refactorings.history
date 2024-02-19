@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;org.jsp.timestamp.controler&apos; to &apos;org.jsp.timestamp.controller&apos;&#x0D;&#x0A;- Original project: &apos;TimestampAnnotationDemo&apos;&#x0D;&#x0A;- Original element: &apos;TimestampAnnotationDemo/src/main/java/org.jsp.timestamp.controler&apos;&#x0D;&#x0A;- Renamed element: &apos;TimestampAnnotationDemo/src/main/java/org.jsp.timestamp.controller&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;org.jsp.timestamp.controler&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;org.jsp.timestamp.controler" name="org.jsp.timestamp.controller" qualified="false" references="true" stamp="1704458868856" textual="false" version="1.0"/>
+</session>

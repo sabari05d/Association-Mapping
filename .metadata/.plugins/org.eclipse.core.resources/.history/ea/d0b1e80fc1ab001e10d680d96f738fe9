@@ -1,0 +1,66 @@
+package org.jsp.AdminHospital.dao;
+
+import java.util.Scanner;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityTransaction;
+import javax.persistence.Persistence;
+
+import org.jsp.AdminHospital.dto.Admin;
+import org.jsp.AdminHospital.dto.Hospital;
+
+public class AdminHospitalDao {
+	EntityManager manager = Persistence.createEntityManagerFactory("hospital").createEntityManager();
+	EntityTransaction transaction = manager.getTransaction();
+	Scanner sc = new Scanner(System.in);
+	Admin ad = new Admin();
+	Hospital hos = new Hospital();
+
+	// Save Admin
+	public void saveAdmin() {
+		System.out.println("Enter the Admin Name:");
+		ad.setName(sc.next());
+		System.out.println("Enter the Admin Phone number:");
+		ad.setPhone(sc.nextLong());
+		System.out.println("Enter the Admin Email:");
+		ad.setName(sc.next());
+		System.out.println("Enter the Admin Password:");
+		ad.setName(sc.next());
+
+		manager.persist(ad);
+		transaction.begin();
+		transaction.commit();
+	}
+
+	// Update Admin
+	public void updateAdmin() {
+		System.out.println("Enter the Admin ID to be Updated");
+		int id = sc.nextInt();
+		ad = manager.find(Admin.class, id);
+		if (ad != null) {
+			ad.setId(id);
+			System.out.println("Enter the Admin Name:");
+			ad.setName(sc.next());
+			System.out.println("Enter the Admin Phone number:");
+			ad.setPhone(sc.nextLong());
+			System.out.println("Enter the Admin Email:");
+			ad.setName(sc.next());
+			System.out.println("Enter the Admin Password:");
+			ad.setName(sc.next());
+
+			manager.persist(ad);
+			transaction.begin();
+			transaction.commit();
+
+		} else {
+			System.err.println("Unable to Update the Admin Entered Invalid ID " + id);
+		}
+	}
+
+	// Find Admin By Id
+	public void FindAdminById() {
+		System.out.println("Enter the Admin ID to display details");
+		int id = sc.nextInt();
+		manager.find(Admin.class, id);
+	}
+}

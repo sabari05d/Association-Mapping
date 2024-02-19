@@ -1,0 +1,12 @@
+package org.jsp.AdminHospital.dao;
+
+import javax.persistence.EntityManager;
+import javax.persistence.Persistence;
+
+public class AdminHospitalDao {
+	EntityManager manager = Persistence.createEntityManagerFactory("hospital").createEntityManager();
+	// Save Admin
+	public void saveAdmin() {
+		
+	}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;org.jsp.one2one.contoller&apos; to &apos;org.jsp.one2one.controller&apos;&#x0D;&#x0A;- Original project: &apos;one2one_bi-dir&apos;&#x0D;&#x0A;- Original element: &apos;one2one_bi-dir/src/main/java/org.jsp.one2one.contoller&apos;&#x0D;&#x0A;- Renamed element: &apos;one2one_bi-dir/src/main/java/org.jsp.one2one.controller&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;org.jsp.one2one.contoller&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;org.jsp.one2one.contoller" name="org.jsp.one2one.controller" qualified="false" references="true" stamp="1703765742689" textual="false" version="1.0"/>
+</session>
